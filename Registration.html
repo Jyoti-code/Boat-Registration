@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>RegistrationForm</title>
+        <meta name="viewport" content="width=device-width",initial-scale=1">
+        <link rel="stylesheet" href="Registration.css"> 
+
+    </head>
+    <body>
+        <div class="heading"><b>BOAT REGISTRATION</b></div>
+        <div class="scrolldown" >
+        <table border=0 align=center cellspacing=10 cellpading=2 background="Images/texture.jpg">
+        <form name ="fm1" method="get" action=""  spellcheck="false">
+            <tr>
+                <td colspan="3">
+                  <center>  <img src="Images/registration.jpg" alt="" width="500px" height="180px"></center>
+                </td>
+            </tr>
+            <tr>
+                <th align=left>Name *<br>
+            </tr>
+                <tr>
+                <td width=13%><input type="text" id="namef" value="" placeholder="First Name" required >
+                <td><input type="text" id="namel" value="" required placeholder="Last Name" >
+            </tr>
+            <tr>
+                <th align=left>Email *<br>
+            </tr>
+                <tr>
+                <td><input type="email" name="name" value="" placeholder="example@example.com"required><br>
+            </tr>
+            <tr>
+                <th align=left>Phone *<br>
+            </tr>
+                <tr>
+                <td><input type="text" id="code" value=""placeholder="Area Code" required>
+                
+                <td><input type="text" id="number" value="" placeholder="Phone number" required>
+                
+            </tr>
+            <tr>
+                <th align=left>Enter the date you would like boat charter *<br>
+            </tr>
+                <tr>
+                <td><input type="date" name="name" value="2014-05" required><br>
+                Date
+            </tr>
+            <tr>
+                <th align=left required>Please enter time</th>
+            </tr>
+            <tr>
+              <td><select name="list1" size=1 >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+              </select>:<br>Hour</td>  
+              <td><select name="list2" size=1 >
+                <option value="00">00</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select><br>Minutes</td> 
+            <td>
+                <select name="list3" size=1>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <th align=left>Which boats are you interested in?</th>
+            </tr>
+            <tr>
+              
+              <td><select name="list2" size=1 >
+                <option value="ei">EI Toro</option>
+                <option value="sooncome">Soon Come</option>
+                <option value="innovation">Innovation</option>
+                <option value="Innovation2">Innovation2</option>
+                <option value="fastcat">Fast Cat</option>
+            </select></td>
+            </tr>
+            <tr>
+                <th align=left>How many person?<br>
+            </tr>
+                <tr>
+                <td><input type="number" name="name" value=""><br>
+            </tr>
+            <tr>
+                <th align=left>How many kids under 10?<br>
+            </tr>
+                <tr>
+                <td><input type="number" name="name" value=""><br>
+            </tr>
+            <tr>
+                <th align=left>Which island are you staying on during your vacation?</th>
+            </tr>
+            <tr>
+                <td><input type="radio" name="thomas" value="thomas"/>
+                St.Thomas</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="john" value="john"/>
+                St.John</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="other" value="other"/>
+                other</td>
+            </tr>
+            <tr>
+                <th align=left>If you are arriving by Cruise Ship please list your ships name. <br>
+            </tr>
+                <tr>
+                <td><input type="text" name="name" value="" placeholder="For example: Carnival Sunrise">
+                
+            </tr>
+            <tr>
+                <th align=left>How did you hear about us?</th>
+            </tr>
+            <tr>
+                <td>
+                   <input type ="checkbox" name="tripadvisior" value="y" />
+                   TripAdvisor
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type ="checkbox" name="friend" value="y" />
+                   Friend
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type ="checkbox" name="pastcustomer" value="y" />
+                   Past customer
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type ="checkbox" name="Magazine" value="y" />
+                   Magazine
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type ="checkbox" name="Google" value="y" />
+                   Google
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type ="checkbox" name="Concierge" value="y" />
+                   Concierge
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type ="checkbox" name="other" value="y" />
+                   <input type="text" name="other" value="" placeholder="Other"/>
+                </td>
+            </tr>
+            <tr>
+                <th align=left>Other Comments</th>
+            </tr>
+            <tr>
+                <td><textarea rows=7 cols=60 placeholder="Write something....."></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3"><center><button type="reset" class="btn1">Reset</button>
+                    <button type="submit" class="btn2" onclick="myFunction()">Submit</button>
+                    <button onclick="window.location.href='Payment.html' " class="btn3">Payment</button>
+                    <button onclick="window.location.href='FrontPage.html' " class="btn1">Cancel</button>
+                </center>
+                </td>
+        
+            </tr>
+        </form>
+        </table>
+    </div>
+    <script src="Registration.js"></script>
+    </body>
+</html>

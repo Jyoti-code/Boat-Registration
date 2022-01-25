@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(218, 143, 90);
+    height: 100%;
+    
+}
+
+table{
+    background-color: rgb(218, 143, 90);
+    color:cornsilk;
+}
+.icon-container {
+    font-size: 30px;
+}
+.column{
+    float:left;
+}
+.button{
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    font-size: 30px;
+    width: 250px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(71, 71, 236);
+}
+.btn2{
+    cursor: pointer;
+margin: 0px 20px;
+color: white;
+font-size: 29px;
+width: 200px;
+height: 37px;
+background-color: red;
+}
+.btn2:hover{
+    background-color: rgb(236, 44, 44);
+}
+#totalbtn{
+    font-size: 15px;
+    width: 100px;
+    background-color: skyblue;
+}
+@media only screen and (max-width: 1200px) {
+    .table1 {
+        width:1100px;
+    }
+    .table2 {
+        width:1100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .table1 {
+        width:800px;
+    }
+    .table2 {
+        width:800px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .table1 {
+        width:500px;
+    }
+    .table2 {
+        width:500px;
+    }
+}

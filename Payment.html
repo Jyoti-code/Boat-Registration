@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Payment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Payment.css"> 
+    </head>
+    <body>
+        <div class="box" style="overflow: auto;">
+        <div class="payment">
+            <div class="column">
+            <table border=0 cellspacing=10 cellpading=2 class="table1" style="height: 600px;">
+                <form name ="fm1" method="get" action="" autocomplete="off" spellcheck="false">
+                    <tr>
+                        <td colspan=3 style="color: rgb(17, 17, 56);" >
+                            <h1><b>Payment Summary</b></h1></td></tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat1" value="y"/>Sunset Boat tours  ( $250 / </td>
+                            <td><input type="number" id="times1" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest1" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat2" value="y"/>Boat tours  ( $200 / </td>
+                            <td><input type="number" id="times2" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest2" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat3" value="y"/>Mountain tour( $50 / </td>
+                            <td><input type="number" id="times3" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest3" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat4" value="y"/>Diving and Snorkling( $50 / </td>
+                            <td><input type="number" id="times4" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest4" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat5" value="y"/>Water sport( $60 / </td>
+                            <td><input type="number" id="times5" value="" placeholder="Per Day"/> / </td>
+                            <td><input type="number" id="Guest5" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat6" value="y"/>Surfing lessons($55 </td>
+                            <td><input type="number" id="times6" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest6" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat7" value="y"/>Classic Double Bedroom( $40 / </td>
+                            <td><input type="number" id="times7" value="" placeholder="Per Night"/> / </td>
+                            <td><input type="number" id="Guest7" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat8" value="y"/>Restaurant(Table with exterior view)( $20 / </td>
+                            <td><input type="number" id="times8" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest8" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat9" value="y"/>Restaurant(Boat Shape Table)( $10 / </td>
+                            <td><input type="number" id="times9" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest9" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat10" value="y"/>Room (Health Conscious)( $50 / </td>
+                            <td><input type="number" id="times10" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest10" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat11" value="y"/>Spa and Massage( $120 / </td>
+                            <td><input type="number" id="times11" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest11" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="boat12" value="y"/>Swimming Pool( $60 / </td>
+                            <td><input type="number" id="times12" value="" placeholder="Once"/> / </td>
+                            <td><input type="number" id="Guest12" value="" placeholder="Per Guest"/>)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" onclick="myfunction()" value="Total" id="totalbtn">
+                            </td>
+                            <td>
+                                <input type="text" id="total" value="" placeholder="Total Dollar">
+                            </td>
+                        </tr>
+                    </form>
+                    </table>
+                    </div>
+                    <div class="column">
+                        <table border=0 cellspacing=10 cellpading=2 class="table2">
+                            <form name ="fm2" method="get" action="" autocomplete="off" spellcheck="false">
+                    <tr>
+                        <td colspan="2" style="color: rgb(17, 17, 56);font-size: 40px;">
+                            <center><b>Payment</b></center><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h2>Available cards</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:rgb(255, 4, 4);"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h2 style="color: brown;"><b>Enter credit card details</b></h2></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 20px;">Card Number</td>
+                        <td><input id="cardnumber" type="text" name="number" value="" placeholder="CARD NUMBER" required></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 20px;">Expired In</td>
+                        <td><input  id="mmyy" type="month" name="mmyy" value="MM / YY" placeholder="MM / YY" required></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 20px;">CVV Number</td>
+                        <td><input id="cvv" type="text" name="cvv" value="" placeholder="CVV" required></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 20px;">Card Holder Name</td>
+                        <td><input id="name" type="text" name="name" value="" placeholder="NAME" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button  class="button" onclick="payment()">Payment</button>
+                        </td>
+                        <td>
+                            <input type="button" onclick="window.location.href='Registration.html'" class="btn2" value="Cancel">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+        <script src="Payment.js"></script>
+    </body>
+</html>

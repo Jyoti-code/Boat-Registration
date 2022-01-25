@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+   
+  }
+  
+  .content {
+    text-align: center;
+    background: rgba(241, 240, 240, 0.4);
+    width:750px;
+    height:450px;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    margin:20px
+  }
+  h3{
+    font-family: cursive;
+    color: green;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    
+  }
+  .topnav a{
+    float: right;
+    color: orangered;
+    text-align: center;
+    padding: 16px 110px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: orangered;
+  }
+  
+  .topnav a.active {
+    background-color: rgb(63, 62, 62);
+    color: orangered;
+  }
+  .footer{
+    width:180px;
+    height:160px;
+  }
+  #video{
+    width:780px;
+    height: 500px;
+  }
+  #myVideo{
+    height: 500px;
+  }
+  
+  #container{
+    background: url("Images/front.jpg");
+    background-size: cover;
+    overflow: auto;
+    position: relative;
+  }
+  #welcome{
+    text-align: center;
+  }
+  @media only screen and (min-width: 1360px) {
+    #welcome {
+        position: absolute;
+        right:0;
+        top: 0;
+    }
+  }
+  @media only screen and (max-width: 1350px) {
+    #video {
+        margin:auto;
+    }
+    .content {
+     
+      margin: auto 250px;
+  }
+  }
+  @media only screen and (max-width: 1000px) {
+    .content {
+     
+        margin: auto 100px;
+    }
+  }
+  
+  #button{
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(218, 143, 90);
+    font-size: 30px;
+    width: 200px;
+    transition: all 0.2s ease-in-out;
+    -webkit-animation: glowing 1300ms infinite;
+    -moz-animation: glowing 1300ms infinite;
+    -o-animation: glowing 1300ms infinite;
+    animation: glowing 1300ms infinite;
+  }
+@-webkit-keyframes glowing {
+0% {
+    background-color: #0091b2;
+    -webkit-box-shadow: 0 0 3px #0091b2;
+}
+50% {
+background-color: #21c7ed;
+    -webkit-box-shadow: 0 0 15px #21c7ed;
+}
+100% {
+ background-color: #0091b2;
+-webkit-box-shadow: 0 0 3px #0091b2;
+}
+}
+@keyframes glowing {
+0% {
+background-color: orangered;
+box-shadow: 0 0 3px orangered;
+}
+50% {
+background-color: orangered;
+box-shadow: 0 0 15px orangered;
+}
+100% {
+background-color: orangered;
+box-shadow: 0 0 3px orangered;
+}
+}
+#footer{
+  display: flex;
+  flex-flow: row;
+  margin: 20px;
+  background: url("Images/fronttexture2.jpg");
+  background-size: cover;
+}
+
+.checked{
+  color: yellow;
+  font-size: 30px;
+}
+#customerReviews{
+  width: 55%;
+  height: 50%;
+  color: blue;
+}
+.checked2{
+  color: yellow;
+}
+table{
+  padding-left: 0;
+  width: 20%;
+  text-align: center;
+  color: blue;
+  border-color: orange;
+  border-style: solid;
+}
+#feedbackRating{
+  width: 40%;
+  height: 60%;
+}
+
+.checked3{
+  color: yellow;
+  font-size: 15px;
+}
+#table2{
+  text-align: center;
+  margin-left: 10px;
+  width:50%;
+  border: none;
+}
+#rateUs{
+  color: blue;
+  width: 50%;
+  height: 50%;
+}
+.checked4{
+  color: yellow;
+  font-size: 30px;
+}
+
+.btn{
+  cursor: pointer;
+  margin: 20px;
+  font-size: 20px;
+  border:none;
+  background-color: rgb(224, 99, 120);
+  color: white;
+  border-radius: 0;
+  width: 100px;
+}
